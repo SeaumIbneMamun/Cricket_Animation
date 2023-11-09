@@ -1,0 +1,68 @@
+.black {
+    background-color: black;
+}
+
+.bat{
+    height: 433px;
+    transform: rotate(20deg);
+    transition: transform 0.8s ease-in;
+}
+
+.ball {
+    height: 40px;
+    position: relative;
+    padding: 0px 0px 10px 1055px;
+    
+    /* transform: translate(1200px); */
+    
+}
+
+
+.field {
+    border: 2px solid white;
+    padding-top: 80px;
+}
+
+.field:hover .bat{
+    transform: rotate(0deg);
+    transform-origin: top right;
+}
+
+.field:hover .ball{
+    transform: translate(-1214px);
+    animation: bowling 12s;
+    transition: transform 0.4s ease-out  0.4s ;
+    
+}
+
+@keyframes bowling {
+    0%{
+        left: 0px;
+
+    }
+
+
+    5%{
+        left: 01px;
+        /* bottom: 0; */
+    }
+
+    45%{
+        left: 950px ;
+    }
+
+    /* 55%{
+        left:800px
+    }
+    65%{
+        left:850px
+    }
+    75%{
+        left:900px
+    } */
+
+    100%{
+        left: 1150px;
+        /* bottom: 20%; */
+    }
+}
