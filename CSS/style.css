@@ -12,6 +12,7 @@
     height: 40px;
     position: relative;
     padding: 0px 0px 10px 1055px;
+    bottom: 48px;
     
     /* transform: translate(1200px); */
     
@@ -20,7 +21,7 @@
 
 .field {
     border: 2px solid white;
-    padding-top: 80px;
+    padding-top: 30px;
 }
 
 .field:hover .bat{
@@ -29,7 +30,12 @@
 }
 
 .field:hover .ball{
-    transform: translate(-1214px);
+    transform: translate(-910px);
+    padding-bottom: 8px;
+    position: relative;
+
+    
+    bottom: 48px;
     animation: bowling 12s;
     transition: transform 0.4s ease-out  0.4s ;
     
@@ -37,13 +43,13 @@
 
 @keyframes bowling {
     0%{
-        left: 0px;
+        left: 05px;
 
     }
 
 
     5%{
-        left: 01px;
+        left: 10px;
         /* bottom: 0; */
     }
 
@@ -62,7 +68,7 @@
     } */
 
     100%{
-        left: 1150px;
+        left: 1000px;
         /* bottom: 20%; */
     }
 }
